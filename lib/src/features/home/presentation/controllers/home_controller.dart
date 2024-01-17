@@ -61,10 +61,13 @@ class HomeController extends GetxController {
 
       if (dataState is DataFailed) {
         dioException.value = dataState.error;
-        Get.snackbar('مشکل', 'مشکل سرور');
+        Get.snackbar('خطا', 'مشکل سرور');
       }
 
       isSending.value = false;
+    } else {
+      Get.snackbar('خطا', 'لطفا خدمات مورد نظر خود را انتخاب کنید');
+
     }
   }
 }
