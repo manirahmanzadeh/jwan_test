@@ -21,6 +21,7 @@ class MyApp extends StatelessWidget {
       theme: Get.find<ThemeController>().currentTheme,
       initialBinding: HomeBinding(),
       initialRoute: '/',
+      locale: const Locale('fa'),
       getPages: AppRoutes.routes,
     );
   }

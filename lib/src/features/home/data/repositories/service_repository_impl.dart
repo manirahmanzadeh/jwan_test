@@ -47,7 +47,7 @@ class ServiceRepositoryImpl implements ServiceRepository {
     try {
       final httpResponse = await _servicesService.chooseService(selectedServices);
 
-      if (httpResponse.statusCode == HttpStatus.ok) {
+      if (httpResponse.statusCode == 201) {
         return const DataSuccess('ok');
       } else {
         return DataFailed(

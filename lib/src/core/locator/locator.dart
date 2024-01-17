@@ -5,6 +5,7 @@ import 'package:jwan_test/src/core/network/dio_configuration.dart';
 import 'package:jwan_test/src/features/home/data/datasources/services_service.dart';
 import 'package:jwan_test/src/features/home/data/repositories/service_repository_impl.dart';
 import 'package:jwan_test/src/features/home/domain/repositories/service_repository.dart';
+import 'package:jwan_test/src/features/home/domain/usecases/choose_services.dart';
 import 'package:jwan_test/src/features/home/domain/usecases/get_services.dart';
 
 registerDependencies() {
@@ -18,4 +19,6 @@ registerDependencies() {
   Get.put<ServiceRepository>(ServiceRepositoryImpl(Get.find()));
 
   Get.put<GetServicesUseCase>(GetServicesUseCase(Get.find()));
+
+  Get.put<ChooseServicesUseCase>(ChooseServicesUseCase(Get.find()));
 }

@@ -4,6 +4,6 @@ import 'package:jwan_test/src/features/home/presentation/controllers/home_contro
 class HomeBinding extends Bindings {
   @override
   void dependencies() {
-    Get.lazyPut(() => HomeController(Get.find()));
+    Get.lazyPut(() => HomeController(Get.find(), Get.find()));
   }
 }

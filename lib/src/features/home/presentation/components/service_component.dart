@@ -8,13 +8,11 @@ class ServiceComponent extends StatelessWidget {
     super.key,
     required this.service,
     required this.onTap,
-    required this.order,
     required this.selected,
   });
 
   final ServiceEntity service;
   final Function() onTap;
-  final Order order;
   final bool selected;
 
   @override
@@ -24,16 +22,15 @@ class ServiceComponent extends StatelessWidget {
       child: Column(
         children: [
           Container(
-            margin: const EdgeInsets.all(16),
             padding: const EdgeInsets.all(10),
-            width: (MediaQuery.sizeOf(context).width - 128) / (order == Order.fourCol ? 4 : 5),
-            height: (MediaQuery.sizeOf(context).width - 128) / (order == Order.fourCol ? 4 : 5),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(16),
               color: selected ? Theme.of(context).primaryColor : Theme.of(context).colorScheme.secondary,
             ),
             child: SvgPicture.network(
-              service.icon,
+              service.icon.split('?').first,
+              height: 40,
+              width: 40,
               color: selected ? Theme.of(context).colorScheme.onPrimary : Theme.of(context).colorScheme.onSecondary,
             ),
           ),
@@ -50,9 +47,4 @@ class ServiceComponent extends StatelessWidget {
       ),
     );
   }
-}
-
-enum Order {
-  fourCol,
-  fiveCol,
 }
