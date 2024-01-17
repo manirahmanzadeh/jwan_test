@@ -1,0 +1,13 @@
+<svg fill="none" height="25" viewBox="0 0 24 25" width="24" xmlns="http://www.w3.org/2000/svg">
+    <g id="Group">
+        <path clip-rule="evenodd" d="M12.0002 1.70844C17.9595 1.70844 22.7918 6.5396 22.7918 12.5001C22.7918 18.4594 17.9595 23.2918 12.0002 23.2918C6.03966 23.2918 1.2085 18.4594 1.2085 12.5001C1.2085 6.54077 6.04083 1.70844 12.0002 1.70844Z" fill-rule="evenodd"
+            id="Vector"
+            stroke="#212121" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+        <path d="M16.5959 12.5152H16.6064" id="Line" stroke="#212121" stroke-linecap="round"
+            stroke-linejoin="round" stroke-width="2" />
+        <path d="M11.9187 12.5152H11.9292" id="Line_2" stroke="#212121" stroke-linecap="round"
+            stroke-linejoin="round" stroke-width="2" />
+        <path d="M7.24166 12.5152H7.25216" id="Line_3" stroke="#212121" stroke-linecap="round"
+            stroke-linejoin="round" stroke-width="2" />
+    </g>
+</svg>
